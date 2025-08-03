@@ -1,0 +1,141 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.snapmail"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml
+10
+11    <!-- 权限声明 -->
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:6:5-64
+12-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:7:5-80
+13-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:8:5-79
+14-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:8:22-77
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:9:5-66
+15-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:9:22-64
+16
+17    <!-- 相机功能声明 -->
+18    <uses-feature android:name="android.hardware.camera" />
+18-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:12:5-59
+18-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:12:19-57
+19    <uses-feature android:name="android.hardware.camera.autofocus" />
+19-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:13:5-69
+19-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:13:19-67
+20
+21    <permission
+21-->[androidx.core:core:1.9.0] /Users/at/.gradle/caches/transforms-3/b0bb6a21c8df98e543804bcd4af9a2a1/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+22        android:name="com.example.snapmail.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.9.0] /Users/at/.gradle/caches/transforms-3/b0bb6a21c8df98e543804bcd4af9a2a1/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.9.0] /Users/at/.gradle/caches/transforms-3/b0bb6a21c8df98e543804bcd4af9a2a1/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.example.snapmail.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.9.0] /Users/at/.gradle/caches/transforms-3/b0bb6a21c8df98e543804bcd4af9a2a1/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.9.0] /Users/at/.gradle/caches/transforms-3/b0bb6a21c8df98e543804bcd4af9a2a1/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:15:5-51:19
+28        android:allowBackup="true"
+28-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:16:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.9.0] /Users/at/.gradle/caches/transforms-3/b0bb6a21c8df98e543804bcd4af9a2a1/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+30        android:dataExtractionRules="@xml/data_extraction_rules"
+30-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:17:9-65
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:fullBackupContent="@xml/backup_rules"
+33-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:18:9-54
+34        android:icon="@mipmap/ic_launcher"
+34-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:19:9-43
+35        android:label="@string/app_name"
+35-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:20:9-41
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:21:9-54
+37        android:supportsRtl="true"
+37-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:22:9-35
+38        android:theme="@style/Theme.SnapMail" >
+38-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:23:9-46
+39
+40        <!-- FileProvider声明 -->
+41        <provider
+41-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:27:9-35:20
+42            android:name="androidx.core.content.FileProvider"
+42-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:28:13-62
+43            android:authorities="com.example.snapmail.fileprovider"
+43-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:29:13-68
+44            android:exported="false"
+44-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:30:13-37
+45            android:grantUriPermissions="true" >
+45-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:31:13-47
+46            <meta-data
+46-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:32:13-34:63
+47                android:name="android.support.FILE_PROVIDER_PATHS"
+47-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:33:17-67
+48                android:resource="@xml/file_provider_paths" />
+48-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:34:17-60
+49        </provider>
+50
+51        <activity
+51-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:37:9-44:20
+52            android:name="com.example.snapmail.MainActivity"
+52-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:38:13-41
+53            android:exported="true" >
+53-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:39:13-36
+54            <intent-filter>
+54-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:40:13-43:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:41:17-68
+55-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:41:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:42:17-76
+57-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:42:27-74
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:45:9-47:39
+61            android:name="com.example.snapmail.AddRecipientActivity"
+61-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:46:13-49
+62            android:exported="false" />
+62-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:47:13-37
+63        <activity
+63-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:48:9-50:39
+64            android:name="com.example.snapmail.AddSenderActivity"
+64-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:49:13-46
+65            android:exported="false" />
+65-->/Users/at/项目s/14-SnapMail/demo/app/src/main/AndroidManifest.xml:50:13-37
+66
+67        <provider
+67-->[androidx.emoji2:emoji2:1.2.0] /Users/at/.gradle/caches/transforms-3/1958a313e3caf0867e1b275eaa80c7e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+68            android:name="androidx.startup.InitializationProvider"
+68-->[androidx.emoji2:emoji2:1.2.0] /Users/at/.gradle/caches/transforms-3/1958a313e3caf0867e1b275eaa80c7e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+69            android:authorities="com.example.snapmail.androidx-startup"
+69-->[androidx.emoji2:emoji2:1.2.0] /Users/at/.gradle/caches/transforms-3/1958a313e3caf0867e1b275eaa80c7e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+70            android:exported="false" >
+70-->[androidx.emoji2:emoji2:1.2.0] /Users/at/.gradle/caches/transforms-3/1958a313e3caf0867e1b275eaa80c7e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+71            <meta-data
+71-->[androidx.emoji2:emoji2:1.2.0] /Users/at/.gradle/caches/transforms-3/1958a313e3caf0867e1b275eaa80c7e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+72-->[androidx.emoji2:emoji2:1.2.0] /Users/at/.gradle/caches/transforms-3/1958a313e3caf0867e1b275eaa80c7e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+73                android:value="androidx.startup" />
+73-->[androidx.emoji2:emoji2:1.2.0] /Users/at/.gradle/caches/transforms-3/1958a313e3caf0867e1b275eaa80c7e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/at/.gradle/caches/transforms-3/a2f1ff28fc8cadf153dedc8346216cb4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+75-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/at/.gradle/caches/transforms-3/a2f1ff28fc8cadf153dedc8346216cb4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+76                android:value="androidx.startup" />
+76-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/at/.gradle/caches/transforms-3/a2f1ff28fc8cadf153dedc8346216cb4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+77        </provider>
+78    </application>
+79
+80</manifest>

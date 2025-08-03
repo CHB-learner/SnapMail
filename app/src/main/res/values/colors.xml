@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色调 -->
+    <color name="primary">#2196F3</color>
+    <color name="primary_variant">#1976D2</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <!-- 强调色 -->
+    <color name="secondary">#03DAC6</color>
+    <color name="secondary_variant">#018786</color>
+    <color name="on_secondary">#000000</color>
+
+    <!-- 背景色 -->
+    <color name="background">#FFFFFF</color>
+    <color name="on_background">#000000</color>
+
+    <!-- 表面色 -->
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#000000</color>
+
+    <!-- 错误色 -->
+    <color name="error">#B00020</color>
+    <color name="on_error">#FFFFFF</color>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 顶部标题 -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 拍照按钮 -->
+    <Button
+        android:id="@+id/btn_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_photo"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/on_primary"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="24dp"/>
+
+    <!-- 发件人信息显示 -->
+    <TextView
+        android:id="@+id/sender_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未设置发件人"
+        android:textSize="14sp"
+        android:textColor="@color/on_surface"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_take_photo"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 添加发件人按钮 -->
+    <Button
+        android:id="@+id/btn_add_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加163邮箱"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/on_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_take_photo"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 收件人列表标题 -->
+    <TextView
+        android:id="@+id/recipient_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recipient_list"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sender_info_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"/>
+
+    <!-- 添加收件人按钮 -->
+    <Button
+        android:id="@+id/btn_add_recipient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_recipient"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/on_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sender_info_text"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"/>
+
+    <!-- 收件人列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipient_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipient_list_title"
+        android:layout_margin="16dp"/>
+
+    <!-- 无收件人提示 -->
+    <TextView
+        android:id="@+id/no_recipients_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_recipients"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/recipient_list"
+        app:layout_constraintEnd_toEndOf="@id/recipient_list"
+        app:layout_constraintStart_toStartOf="@id/recipient_list"
+        app:layout_constraintTop_toTopOf="@id/recipient_list"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

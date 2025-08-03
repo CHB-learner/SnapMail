@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SnapMail</string>
+    <string name="take_photo">拍照</string>
+    <string name="add_recipient">添加收件人</string>
+    <string name="send_email">发送邮件</string>
+    <string name="no_recipients">暂无收件人，请添加</string>
+    <string name="recipient_list">收件人列表</string>
+    <string name="email_hint">请输入邮箱地址</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="confirm_delete">确定要删除这个收件人吗？</string>
+    <string name="photo_saved">照片已保存</string>
+    <string name="email_sent">邮件已发送</string>
+    <string name="email_send_failed">邮件发送失败</string>
+    <string name="permission_required">需要相机/存储/网络权限</string>
+    <string name="invalid_email">请输入有效的邮箱地址</string>
+</resources>
