@@ -4,6 +4,10 @@
 
 SnapMail 是一款专为163邮箱用户设计的Android应用，支持拍照后自动发送邮件。应用采用简洁的界面设计，提供便捷的拍照-发送一体化体验。
 
+## 使用文档
+https://t18y7sz3iu.feishu.cn/wiki/J5hvwwRScitRyIk3yd1cofV8nod?from=from_copylink
+
+
 ## ✨ 主要功能
 
 ### 📸 拍照发送
